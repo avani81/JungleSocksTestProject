@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="4" passed="4">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="22623" started-at="2016-01-23T10:52:14Z" finished-at="2016-01-23T10:52:37Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="22623" started-at="2016-01-23T10:52:14Z" finished-at="2016-01-23T10:52:37Z">
+      <class name="tests.ProductTests">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:tests.ProductTests@56618102]" name="beforeTest" is-config="true" duration-ms="3490" started-at="2016-01-23T02:52:14Z" finished-at="2016-01-23T02:52:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testSubTotalForProductElephant()[pri:0, instance:tests.ProductTests@56618102]" name="testSubTotalForProductElephant" duration-ms="2884" started-at="2016-01-23T02:52:18Z" finished-at="2016-01-23T02:52:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubTotalForProductElephant -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.ProductTests@56618102]" name="afterTest" is-config="true" duration-ms="15" started-at="2016-01-23T02:52:20Z" finished-at="2016-01-23T02:52:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:tests.ProductTests@56618102]" name="beforeTest" is-config="true" duration-ms="2504" started-at="2016-01-23T02:52:20Z" finished-at="2016-01-23T02:52:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testSubTotalForProductGiraffe()[pri:0, instance:tests.ProductTests@56618102]" name="testSubTotalForProductGiraffe" duration-ms="2764" started-at="2016-01-23T02:52:23Z" finished-at="2016-01-23T02:52:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubTotalForProductGiraffe -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.ProductTests@56618102]" name="afterTest" is-config="true" duration-ms="15" started-at="2016-01-23T02:52:26Z" finished-at="2016-01-23T02:52:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:tests.ProductTests@56618102]" name="beforeTest" is-config="true" duration-ms="2584" started-at="2016-01-23T02:52:26Z" finished-at="2016-01-23T02:52:28Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testSubTotalForProductLion()[pri:0, instance:tests.ProductTests@56618102]" name="testSubTotalForProductLion" duration-ms="2974" started-at="2016-01-23T02:52:28Z" finished-at="2016-01-23T02:52:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubTotalForProductLion -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.ProductTests@56618102]" name="afterTest" is-config="true" duration-ms="19" started-at="2016-01-23T02:52:31Z" finished-at="2016-01-23T02:52:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:tests.ProductTests@56618102]" name="beforeTest" is-config="true" duration-ms="2574" started-at="2016-01-23T02:52:31Z" finished-at="2016-01-23T02:52:34Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testSubTotalForProductZebra()[pri:0, instance:tests.ProductTests@56618102]" name="testSubTotalForProductZebra" duration-ms="2756" started-at="2016-01-23T02:52:34Z" finished-at="2016-01-23T02:52:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubTotalForProductZebra -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.ProductTests@56618102]" name="afterTest" is-config="true" duration-ms="10" started-at="2016-01-23T02:52:37Z" finished-at="2016-01-23T02:52:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- tests.ProductTests -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
