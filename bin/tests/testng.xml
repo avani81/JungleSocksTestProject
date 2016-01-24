@@ -1,10 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
 
-<suite name="TestStates">
- <test name="testValidateSalesTax1">   
+<suite name="TestJungleSocksSite">
+ <test name="testValidateSalesTax">   
    <classes>
          <class name="tests.StateTest"/>
+   </classes>   
+ </test>
+ <test name="testProduct">   
+   <classes>
+         <class name="tests.ProductTests"/>
    </classes>   
  </test>
 </suite>

@@ -19,13 +19,11 @@ public class common {
 	}
 	
 	public static Double calculatePrice(Number price , int qty){
-		  Double subtotal = price.doubleValue() * qty;
-		  return subtotal;
+		 return price.doubleValue() * qty;
 	  }
 	  
 	  public static Double calculateSalesTax(Number subtotal, double percent){
-		  Double tax = subtotal.doubleValue() * percent;
-		  return tax;
+		  return subtotal.doubleValue() * percent;
 	  }
 
 }

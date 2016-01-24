@@ -21,13 +21,6 @@ public class CheckoutPage {
 		this.driver = driver;
 	}
 	
-	/*public String getSubtotal() throws ParseException{
-		//convertStringToNumber(driver.findElement(subtotal).getText(),Locale.US);
-		//convertStringToNumber(driver.findElement(taxes).getText(),Locale.US);
-		//convertStringToNumber(driver.findElement(total).getText(),Locale.US);
-		return driver.findElement(subtotal).getText();
-	}*/
-	
 	public Number getSubtotal() throws ParseException{
 		return common.convertStringToNumber(driver.findElement(subtotal).getText());	
 	}
