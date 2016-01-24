@@ -38,7 +38,19 @@ public class StateTest {
 			{ "DE", 0.05 },{ "KS", 0.05 },
 			{ "FL", 0.05 },{ "KY", 0.05 },
 			{ "GA", 0.05 },{ "LA", 0.05 },
-			{ "HI", 0.05 },{ "ME", 0.05 }
+			{ "HI", 0.05 },{ "ME", 0.05 },
+			{ "MD", 0.05 },{ "MA", 0.05 },
+			{ "MI", 0.05 },
+			{ "MS", 0.05 },{ "MO", 0.05 },
+			{ "MT", 0.05 },{ "NE", 0.05 },
+			{ "NV", 0.05 },{ "NH", 0.05 },
+			{ "NJ", 0.05 },{ "NM", 0.05 },
+			{ "NC", 0.05 },{ "ND", 0.10 },
+			{ "OH", 0.05 },{ "OK", 0.05 },
+			{ "OR", 0.05 },{ "PA", 0.05 },
+			{ "RI", 0.05 },{ "SC", 0.05 },{ "SD", 0.05 },{ "TX", 0.05 },
+			{ "TN", 0.05 },{ "UT", 0.05 },{ "VT", 0.05 },{ "VA", 0.05 },
+			{ "WA", 0.05 },{ "WV", 0.05 },{ "WI", 0.05 },{ "WY", 0.05 }		
 		};
 	}
 	
@@ -47,7 +59,7 @@ public class StateTest {
 		return new Object[][]{
 			{ "CA", 0.08 },{ "NY", 0.06 },
 			{ "MN", 0.00 },{ "AL", 0.05 },
-			{ "CT", 0.05 }
+			{ "CT", 0.05 },{ "ND", 0.10 }
 		};
 		
 	}
@@ -64,6 +76,7 @@ public class StateTest {
 	 *
 	 */
 	@Test(dataProvider = "TestStatesProvider")
+	//@Test(dataProvider ="AllStatesProvider")
 	void testValidateSalesTax(String state, Double tax) throws ParseException{
 		  int qty = 1;
 		  objProduct.enterQuantityForZebra("1")

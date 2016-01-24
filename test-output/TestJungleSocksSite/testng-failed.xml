@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [TestJungleSocksSite]">
+  <parameter name="browser" value="firfox"/>
+  <test name="FirefoxTests(failed)">
+    <parameter name="browser" value="firfox"/>
+    <classes>
+      <class name="tests.BrowserTests">
+        <methods>
+          <include name="afterTest"/>
+          <include name="loadHomePage"/>
+          <include name="beforeTest"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- tests.BrowserTests -->
+    </classes>
+  </test> <!-- FirefoxTests(failed) -->
+</suite> <!-- Failed suite [TestJungleSocksSite] -->

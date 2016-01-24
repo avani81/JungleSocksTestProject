@@ -3,14 +3,13 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="tests.ProductTests">
+      <class name="tests.StateTest">
         <methods>
-          <include name="testSubTotalForProductGiraffe"/>
-          <include name="testSubTotalForProductElephant"/>
           <include name="beforeTest"/>
+          <include name="testValidateSalesTax" invocation-numbers="26 32"/>
           <include name="afterTest"/>
         </methods>
-      </class> <!-- tests.ProductTests -->
+      </class> <!-- tests.StateTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

@@ -5,21 +5,26 @@ import static org.junit.Assert.assertEquals;
 import java.text.ParseException;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
+import org.testng.annotations.Parameters;
+import org.testng.annotations.Test;
 
 import pages.CheckoutPage;
 import pages.ProductPage;
 
 public class BrowserTests {
+	
 	public static final String HOMEPAGE = "https://jungle-socks.herokuapp.com/";
 	WebDriver driver ;
 	ProductPage objProduct;
 	CheckoutPage objChkout;
 	
-	//TODO for Chrome
-	/*@BeforeTest
+	
+	 @BeforeTest
 	 @Parameters("browser")
 	  public void beforeTest(String browser) throws Exception{
 		 if(browser.equalsIgnoreCase("firefox")){
@@ -29,23 +34,15 @@ public class BrowserTests {
 			 driver = new ChromeDriver();
 		 }else
 			 throw new Exception("Browser is not correct");
-		  driver.get(HOMEPAGE);
-		 
-		  objProduct = new ProductPage(driver);
 		  
-	  }*/
-	
-	@BeforeMethod
-	public void beforeTest(){
-		driver = new FirefoxDriver();
-		driver.get(HOMEPAGE);
-		objProduct = new ProductPage(driver);
-		
-	}
-
-	  //@Test
+		 driver.get(HOMEPAGE);
+		 objProduct = new ProductPage(driver);
+		  
+	  }
+	 
+	 @Test
 	  public void loadHomePage() throws ParseException{
-		  String homePageTitle = "JungleSocks";  // can be read from file
+		  String homePageTitle = "JungleSocks"; 
 		  assertEquals(driver.getTitle(),homePageTitle);
 		  objProduct.enterQuantityForZebra("1")
 		  .enterQuantityForElephant("2")

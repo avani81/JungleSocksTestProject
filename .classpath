@@ -54,5 +54,6 @@
 	<classpathentry kind="lib" path="/home/avanis/Automation jar files/selenium-2.48.2/libs/cglib-nodep-2.1_3.jar"/>
 	<classpathentry kind="lib" path="/home/avanis/Automation jar files/selenium-2.48.2/libs/bsh-2.0b4.jar"/>
 	<classpathentry kind="lib" path="/home/avanis/Automation jar files/selenium-2.48.2/libs/apache-mime4j-0.6.jar"/>
+	<classpathentry kind="con" path="org.testng.TESTNG_CONTAINER"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
