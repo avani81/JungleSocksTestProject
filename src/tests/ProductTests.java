@@ -42,7 +42,7 @@ public class ProductTests {
 	}
 	
 	/* Test for product Zebra , State CA , Calculates product subtotal based on price */
-	//@Test
+	@Test
 	  void testSubTotalForProductZebra() throws ParseException{
 		  int qty = 2;
 		  objProduct.enterQuantityForZebra("2")
@@ -54,7 +54,7 @@ public class ProductTests {
 	}
 	  
 	/* Test for product Lion , State NY , Calculates product subtotal based on price */
-	//@Test
+	@Test
 	  void testSubTotalForProductLion() throws ParseException{
 		 objProduct.enterQuantityForLion("3")
 		  .selectState("NY");
@@ -65,7 +65,7 @@ public class ProductTests {
 	 }
 	  
 	/* Test for product Elephant , State CT , Calculates product subtotal based on price */
-	//@Test
+	@Test
 	  void testSubTotalForProductElephant() throws ParseException{
 		 objProduct.enterQuantityForElephant("4")
 		  .selectState("CT");
@@ -76,7 +76,7 @@ public class ProductTests {
 	 }
 	
 	/* Test for product Giraffe , State CT , Calculates product subtotal based on price */
-	//@Test
+	@Test
 	  void testSubTotalForProductGiraffe() throws ParseException{
 		 objProduct.enterQuantityForGiraffe("4")
 		  .selectState("CT");
