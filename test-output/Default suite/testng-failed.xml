@@ -7,7 +7,7 @@
         <methods>
           <include name="beforeTest"/>
           <include name="afterTest"/>
-          <include name="testMultipleProducts"/>
+          <include name="testMultipleProducts" invocation-numbers="2"/>
         </methods>
       </class> <!-- tests.ProductTests -->
     </classes>

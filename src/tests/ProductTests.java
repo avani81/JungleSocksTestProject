@@ -8,6 +8,7 @@ import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
 import pages.CheckoutPage;
@@ -22,6 +23,16 @@ public class ProductTests {
 	ProductPage objProduct;
 	CheckoutPage objChkout;
 	
+	@DataProvider
+	public static Object[][] TestStatesProvider() {
+		return new Object[][]{
+			{ "CA", 0.08 },{ "NY", 0.06 },
+			{ "MN", 0.00 },{ "AL", 0.05 },
+			{ "CT", 0.05 },{ "ND", 0.10 }
+		};
+		
+	}
+	
 	@BeforeMethod
 	public void beforeTest(){
 		driver = new FirefoxDriver();
@@ -29,8 +40,9 @@ public class ProductTests {
 		objProduct = new ProductPage(driver);
 		
 	}
+	
 	/* Test for product Zebra , State CA , Calculates product subtotal based on price */
-	@Test
+	//@Test
 	  void testSubTotalForProductZebra() throws ParseException{
 		  int qty = 2;
 		  objProduct.enterQuantityForZebra("2")
@@ -39,9 +51,10 @@ public class ProductTests {
 		  objChkout = objProduct.clickCheckout();
 		  Double actual = objChkout.getSubtotal().doubleValue();
 		  assertEquals(expected ,actual);	  
-	 }
+	}
+	  
 	/* Test for product Lion , State NY , Calculates product subtotal based on price */
-	@Test
+	//@Test
 	  void testSubTotalForProductLion() throws ParseException{
 		 objProduct.enterQuantityForLion("3")
 		  .selectState("NY");
@@ -50,8 +63,9 @@ public class ProductTests {
 		  Double actual = objChkout.getSubtotal().doubleValue();
 		  assertEquals(expected ,actual);	  
 	 }
+	  
 	/* Test for product Elephant , State CT , Calculates product subtotal based on price */
-	@Test
+	//@Test
 	  void testSubTotalForProductElephant() throws ParseException{
 		 objProduct.enterQuantityForElephant("4")
 		  .selectState("CT");
@@ -62,7 +76,7 @@ public class ProductTests {
 	 }
 	
 	/* Test for product Giraffe , State CT , Calculates product subtotal based on price */
-	@Test
+	//@Test
 	  void testSubTotalForProductGiraffe() throws ParseException{
 		 objProduct.enterQuantityForGiraffe("4")
 		  .selectState("CT");
@@ -71,17 +85,21 @@ public class ProductTests {
 		  Double actual = objChkout.getSubtotal().doubleValue();
 		  assertEquals(expected ,actual);	  
 	 }
-	
-	@Test
-	void testMultipleProducts() throws ParseException{
+	  
+	/*
+	 * Test to add multiple products and validate sales tax , total
+	 * 
+	 */
+	@Test(dataProvider = "TestStatesProvider")
+	void testMultipleProducts(String state, Double tax ) throws ParseException{
 		  objProduct.enterQuantityForElephant("1")
 		  .enterQuantityForGiraffe("1").enterQuantityForLion("1").enterQuantityForZebra("1")
-		  .selectState("AL");
+		  .selectState(state);
 		  Number expectedPrice = common.calculatePrice(objProduct.getPriceForElephant(), 1) + 
 				  common.calculatePrice(objProduct.getPriceForGiraffe(), 1) +
 				  common.calculatePrice(objProduct.getPriceForLion(), 1) +
 				  common.calculatePrice(objProduct.getPriceForZibra(), 1) ;
-		  Double expectedTaxes = common.calculateSalesTax(expectedPrice, 0.05);
+		  Double expectedTaxes = common.calculateSalesTax(expectedPrice, tax);
 		  Double expectedTotal = expectedPrice.doubleValue() + expectedTaxes ;
 		  //System.out.println("ePrice="+expectedPrice.doubleValue()+" eTaxes="+expectedTaxes+" eTotal="+expectedTotal);
 		  objChkout = objProduct.clickCheckout();

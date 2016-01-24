@@ -1,30 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite guice-stage="DEVELOPMENT" name="Failed suite [TestJungleSocksSite]">
-  <parameter name="browser" value="firefox"/>
-  <test name="testValidateSalesTax(failed)">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
+  <test name="Default test(failed)">
     <classes>
-      <class name="tests.BrowserTests">
-        <methods>
-          <include name="afterTest"/>
-          <include name="afterTest"/>
-          <include name="beforeTest"/>
-          <include name="beforeTest"/>
-        </methods>
-      </class> <!-- tests.BrowserTests -->
       <class name="tests.ProductTests">
         <methods>
           <include name="beforeTest"/>
           <include name="afterTest"/>
+          <include name="testMultipleProducts" invocation-numbers="2"/>
         </methods>
       </class> <!-- tests.ProductTests -->
-      <class name="tests.StateTest">
-        <methods>
-          <include name="beforeTest"/>
-          <include name="testValidateSalesTax" invocation-numbers="2"/>
-          <include name="afterTest"/>
-        </methods>
-      </class> <!-- tests.StateTest -->
     </classes>
-  </test> <!-- testValidateSalesTax(failed) -->
-</suite> <!-- Failed suite [TestJungleSocksSite] -->
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->
