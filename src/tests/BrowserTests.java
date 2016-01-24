@@ -39,7 +39,8 @@ public class BrowserTests {
 		 objProduct = new ProductPage(driver);
 		  
 	  }
-	 
+	 /* This test will load home page and verify all UI elements
+	  * text fields and state dropdown  , click on checkout */
 	 @Test
 	  public void loadHomePage() throws ParseException{
 		  String homePageTitle = "JungleSocks"; 

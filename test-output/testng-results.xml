@@ -1,17 +1,63 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="6" passed="6">
+<testng-results skipped="0" failed="0" total="13" passed="13">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="34073" started-at="2016-01-24T03:27:27Z" finished-at="2016-01-24T03:28:01Z">
+  <suite name="TestJungleSocksSite" duration-ms="72090" started-at="2016-01-24T04:42:00Z" finished-at="2016-01-24T04:43:13Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="34073" started-at="2016-01-24T03:27:27Z" finished-at="2016-01-24T03:28:01Z">
-      <class name="tests.StateTest">
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:tests.StateTest@2f4bd4d1]" name="beforeTest" is-config="true" duration-ms="3434" started-at="2016-01-23T19:27:27Z" finished-at="2016-01-23T19:27:30Z">
+    <test name="ChromeTests" duration-ms="4357" started-at="2016-01-24T04:42:00Z" finished-at="2016-01-24T04:42:05Z">
+      <class name="tests.BrowserTests">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:tests.BrowserTests@6f8a8b32]" name="beforeTest" is-config="true" duration-ms="3285" started-at="2016-01-23T20:42:00Z" finished-at="2016-01-23T20:42:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[chrome]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="testValidateSalesTax(java.lang.String, java.lang.Double)[pri:0, instance:tests.StateTest@2f4bd4d1]" name="testValidateSalesTax" duration-ms="3073" started-at="2016-01-23T19:27:30Z" data-provider="TestStatesProvider" finished-at="2016-01-23T19:27:33Z">
+        <test-method status="PASS" signature="loadHomePage()[pri:0, instance:tests.BrowserTests@6f8a8b32]" name="loadHomePage" duration-ms="944" started-at="2016-01-23T20:42:04Z" finished-at="2016-01-23T20:42:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadHomePage -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.BrowserTests@6f8a8b32]" name="afterTest" is-config="true" duration-ms="111" started-at="2016-01-23T20:42:05Z" finished-at="2016-01-23T20:42:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- tests.BrowserTests -->
+    </test> <!-- ChromeTests -->
+    <test name="FirefoxTests" duration-ms="5657" started-at="2016-01-24T04:42:05Z" finished-at="2016-01-24T04:42:11Z">
+      <class name="tests.BrowserTests">
+        <test-method status="PASS" signature="beforeTest(java.lang.String)[pri:0, instance:tests.BrowserTests@6e2404a0]" name="beforeTest" is-config="true" duration-ms="2812" started-at="2016-01-23T20:42:05Z" finished-at="2016-01-23T20:42:08Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[firefox]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="loadHomePage()[pri:0, instance:tests.BrowserTests@6e2404a0]" name="loadHomePage" duration-ms="2829" started-at="2016-01-23T20:42:08Z" finished-at="2016-01-23T20:42:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loadHomePage -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.BrowserTests@6e2404a0]" name="afterTest" is-config="true" duration-ms="12" started-at="2016-01-23T20:42:11Z" finished-at="2016-01-23T20:42:11Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- tests.BrowserTests -->
+    </test> <!-- FirefoxTests -->
+    <test name="testValidateSalesTax" duration-ms="35228" started-at="2016-01-24T04:42:11Z" finished-at="2016-01-24T04:42:46Z">
+      <class name="tests.StateTest">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:tests.StateTest@7f47239c]" name="beforeTest" is-config="true" duration-ms="2465" started-at="2016-01-23T20:42:11Z" finished-at="2016-01-23T20:42:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testValidateSalesTax(java.lang.String, java.lang.Double)[pri:0, instance:tests.StateTest@7f47239c]" name="testValidateSalesTax" duration-ms="3275" started-at="2016-01-23T20:42:13Z" data-provider="TestStatesProvider" finished-at="2016-01-23T20:42:16Z">
           <params>
             <param index="0">
               <value>
@@ -27,15 +73,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidateSalesTax -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.StateTest@2f4bd4d1]" name="afterTest" is-config="true" duration-ms="10" started-at="2016-01-23T19:27:33Z" finished-at="2016-01-23T19:27:33Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.StateTest@7f47239c]" name="afterTest" is-config="true" duration-ms="19" started-at="2016-01-23T20:42:16Z" finished-at="2016-01-23T20:42:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:tests.StateTest@2f4bd4d1]" name="beforeTest" is-config="true" duration-ms="2488" started-at="2016-01-23T19:27:33Z" finished-at="2016-01-23T19:27:36Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:tests.StateTest@7f47239c]" name="beforeTest" is-config="true" duration-ms="2516" started-at="2016-01-23T20:42:16Z" finished-at="2016-01-23T20:42:19Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="testValidateSalesTax(java.lang.String, java.lang.Double)[pri:0, instance:tests.StateTest@2f4bd4d1]" name="testValidateSalesTax" duration-ms="2779" started-at="2016-01-23T19:27:36Z" data-provider="TestStatesProvider" finished-at="2016-01-23T19:27:38Z">
+        <test-method status="PASS" signature="testValidateSalesTax(java.lang.String, java.lang.Double)[pri:0, instance:tests.StateTest@7f47239c]" name="testValidateSalesTax" duration-ms="3311" started-at="2016-01-23T20:42:19Z" data-provider="TestStatesProvider" finished-at="2016-01-23T20:42:22Z">
           <params>
             <param index="0">
               <value>
@@ -51,15 +97,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidateSalesTax -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.StateTest@2f4bd4d1]" name="afterTest" is-config="true" duration-ms="10" started-at="2016-01-23T19:27:38Z" finished-at="2016-01-23T19:27:38Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.StateTest@7f47239c]" name="afterTest" is-config="true" duration-ms="9" started-at="2016-01-23T20:42:22Z" finished-at="2016-01-23T20:42:22Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:tests.StateTest@2f4bd4d1]" name="beforeTest" is-config="true" duration-ms="2573" started-at="2016-01-23T19:27:38Z" finished-at="2016-01-23T19:27:41Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:tests.StateTest@7f47239c]" name="beforeTest" is-config="true" duration-ms="2485" started-at="2016-01-23T20:42:22Z" finished-at="2016-01-23T20:42:25Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="testValidateSalesTax(java.lang.String, java.lang.Double)[pri:0, instance:tests.StateTest@2f4bd4d1]" name="testValidateSalesTax" duration-ms="2820" started-at="2016-01-23T19:27:41Z" data-provider="TestStatesProvider" finished-at="2016-01-23T19:27:44Z">
+        <test-method status="PASS" signature="testValidateSalesTax(java.lang.String, java.lang.Double)[pri:0, instance:tests.StateTest@7f47239c]" name="testValidateSalesTax" duration-ms="3374" started-at="2016-01-23T20:42:25Z" data-provider="TestStatesProvider" finished-at="2016-01-23T20:42:28Z">
           <params>
             <param index="0">
               <value>
@@ -75,15 +121,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidateSalesTax -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.StateTest@2f4bd4d1]" name="afterTest" is-config="true" duration-ms="12" started-at="2016-01-23T19:27:44Z" finished-at="2016-01-23T19:27:44Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.StateTest@7f47239c]" name="afterTest" is-config="true" duration-ms="14" started-at="2016-01-23T20:42:28Z" finished-at="2016-01-23T20:42:28Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:tests.StateTest@2f4bd4d1]" name="beforeTest" is-config="true" duration-ms="2510" started-at="2016-01-23T19:27:44Z" finished-at="2016-01-23T19:27:46Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:tests.StateTest@7f47239c]" name="beforeTest" is-config="true" duration-ms="2483" started-at="2016-01-23T20:42:28Z" finished-at="2016-01-23T20:42:31Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="testValidateSalesTax(java.lang.String, java.lang.Double)[pri:0, instance:tests.StateTest@2f4bd4d1]" name="testValidateSalesTax" duration-ms="3105" started-at="2016-01-23T19:27:46Z" data-provider="TestStatesProvider" finished-at="2016-01-23T19:27:49Z">
+        <test-method status="PASS" signature="testValidateSalesTax(java.lang.String, java.lang.Double)[pri:0, instance:tests.StateTest@7f47239c]" name="testValidateSalesTax" duration-ms="3344" started-at="2016-01-23T20:42:31Z" data-provider="TestStatesProvider" finished-at="2016-01-23T20:42:34Z">
           <params>
             <param index="0">
               <value>
@@ -99,15 +145,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidateSalesTax -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.StateTest@2f4bd4d1]" name="afterTest" is-config="true" duration-ms="11" started-at="2016-01-23T19:27:49Z" finished-at="2016-01-23T19:27:49Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.StateTest@7f47239c]" name="afterTest" is-config="true" duration-ms="13" started-at="2016-01-23T20:42:34Z" finished-at="2016-01-23T20:42:34Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:tests.StateTest@2f4bd4d1]" name="beforeTest" is-config="true" duration-ms="2551" started-at="2016-01-23T19:27:49Z" finished-at="2016-01-23T19:27:52Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:tests.StateTest@7f47239c]" name="beforeTest" is-config="true" duration-ms="2462" started-at="2016-01-23T20:42:34Z" finished-at="2016-01-23T20:42:36Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="testValidateSalesTax(java.lang.String, java.lang.Double)[pri:0, instance:tests.StateTest@2f4bd4d1]" name="testValidateSalesTax" duration-ms="3159" started-at="2016-01-23T19:27:52Z" data-provider="TestStatesProvider" finished-at="2016-01-23T19:27:55Z">
+        <test-method status="PASS" signature="testValidateSalesTax(java.lang.String, java.lang.Double)[pri:0, instance:tests.StateTest@7f47239c]" name="testValidateSalesTax" duration-ms="3503" started-at="2016-01-23T20:42:36Z" data-provider="TestStatesProvider" finished-at="2016-01-23T20:42:40Z">
           <params>
             <param index="0">
               <value>
@@ -123,15 +169,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidateSalesTax -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.StateTest@2f4bd4d1]" name="afterTest" is-config="true" duration-ms="10" started-at="2016-01-23T19:27:55Z" finished-at="2016-01-23T19:27:55Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.StateTest@7f47239c]" name="afterTest" is-config="true" duration-ms="10" started-at="2016-01-23T20:42:40Z" finished-at="2016-01-23T20:42:40Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
-        <test-method status="PASS" signature="beforeTest()[pri:0, instance:tests.StateTest@2f4bd4d1]" name="beforeTest" is-config="true" duration-ms="2567" started-at="2016-01-23T19:27:55Z" finished-at="2016-01-23T19:27:58Z">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:tests.StateTest@7f47239c]" name="beforeTest" is-config="true" duration-ms="2575" started-at="2016-01-23T20:42:40Z" finished-at="2016-01-23T20:42:42Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeTest -->
-        <test-method status="PASS" signature="testValidateSalesTax(java.lang.String, java.lang.Double)[pri:0, instance:tests.StateTest@2f4bd4d1]" name="testValidateSalesTax" duration-ms="2918" started-at="2016-01-23T19:27:58Z" data-provider="TestStatesProvider" finished-at="2016-01-23T19:28:01Z">
+        <test-method status="PASS" signature="testValidateSalesTax(java.lang.String, java.lang.Double)[pri:0, instance:tests.StateTest@7f47239c]" name="testValidateSalesTax" duration-ms="3338" started-at="2016-01-23T20:42:42Z" data-provider="TestStatesProvider" finished-at="2016-01-23T20:42:46Z">
           <params>
             <param index="0">
               <value>
@@ -147,11 +193,75 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidateSalesTax -->
-        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.StateTest@2f4bd4d1]" name="afterTest" is-config="true" duration-ms="14" started-at="2016-01-23T19:28:01Z" finished-at="2016-01-23T19:28:01Z">
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.StateTest@7f47239c]" name="afterTest" is-config="true" duration-ms="13" started-at="2016-01-23T20:42:46Z" finished-at="2016-01-23T20:42:46Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterTest -->
       </class> <!-- tests.StateTest -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- testValidateSalesTax -->
+    <test name="testProduct" duration-ms="26792" started-at="2016-01-24T04:42:46Z" finished-at="2016-01-24T04:43:13Z">
+      <class name="tests.ProductTests">
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:tests.ProductTests@28a39a11]" name="beforeTest" is-config="true" duration-ms="2477" started-at="2016-01-23T20:42:46Z" finished-at="2016-01-23T20:42:48Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testMultipleProducts()[pri:0, instance:tests.ProductTests@28a39a11]" name="testMultipleProducts" duration-ms="2993" started-at="2016-01-23T20:42:48Z" finished-at="2016-01-23T20:42:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMultipleProducts -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.ProductTests@28a39a11]" name="afterTest" is-config="true" duration-ms="7" started-at="2016-01-23T20:42:51Z" finished-at="2016-01-23T20:42:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:tests.ProductTests@28a39a11]" name="beforeTest" is-config="true" duration-ms="2488" started-at="2016-01-23T20:42:51Z" finished-at="2016-01-23T20:42:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testSubTotalForProductElephant()[pri:0, instance:tests.ProductTests@28a39a11]" name="testSubTotalForProductElephant" duration-ms="2999" started-at="2016-01-23T20:42:54Z" finished-at="2016-01-23T20:42:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubTotalForProductElephant -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.ProductTests@28a39a11]" name="afterTest" is-config="true" duration-ms="13" started-at="2016-01-23T20:42:57Z" finished-at="2016-01-23T20:42:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:tests.ProductTests@28a39a11]" name="beforeTest" is-config="true" duration-ms="2563" started-at="2016-01-23T20:42:57Z" finished-at="2016-01-23T20:42:59Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testSubTotalForProductGiraffe()[pri:0, instance:tests.ProductTests@28a39a11]" name="testSubTotalForProductGiraffe" duration-ms="2778" started-at="2016-01-23T20:42:59Z" finished-at="2016-01-23T20:43:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubTotalForProductGiraffe -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.ProductTests@28a39a11]" name="afterTest" is-config="true" duration-ms="9" started-at="2016-01-23T20:43:02Z" finished-at="2016-01-23T20:43:02Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:tests.ProductTests@28a39a11]" name="beforeTest" is-config="true" duration-ms="2508" started-at="2016-01-23T20:43:02Z" finished-at="2016-01-23T20:43:05Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testSubTotalForProductLion()[pri:0, instance:tests.ProductTests@28a39a11]" name="testSubTotalForProductLion" duration-ms="2735" started-at="2016-01-23T20:43:05Z" finished-at="2016-01-23T20:43:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubTotalForProductLion -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.ProductTests@28a39a11]" name="afterTest" is-config="true" duration-ms="11" started-at="2016-01-23T20:43:07Z" finished-at="2016-01-23T20:43:07Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+        <test-method status="PASS" signature="beforeTest()[pri:0, instance:tests.ProductTests@28a39a11]" name="beforeTest" is-config="true" duration-ms="2483" started-at="2016-01-23T20:43:07Z" finished-at="2016-01-23T20:43:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeTest -->
+        <test-method status="PASS" signature="testSubTotalForProductZebra()[pri:0, instance:tests.ProductTests@28a39a11]" name="testSubTotalForProductZebra" duration-ms="2698" started-at="2016-01-23T20:43:10Z" finished-at="2016-01-23T20:43:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testSubTotalForProductZebra -->
+        <test-method status="PASS" signature="afterTest()[pri:0, instance:tests.ProductTests@28a39a11]" name="afterTest" is-config="true" duration-ms="13" started-at="2016-01-23T20:43:13Z" finished-at="2016-01-23T20:43:13Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterTest -->
+      </class> <!-- tests.ProductTests -->
+    </test> <!-- testProduct -->
+  </suite> <!-- TestJungleSocksSite -->
 </testng-results>

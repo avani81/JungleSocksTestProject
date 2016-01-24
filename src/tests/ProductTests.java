@@ -73,11 +73,25 @@ public class ProductTests {
 	 }
 	
 	@Test
-	  void testSubTotalForAll(){
-		 //TODO	  
+	void testMultipleProducts() throws ParseException{
+		  objProduct.enterQuantityForElephant("1")
+		  .enterQuantityForGiraffe("1").enterQuantityForLion("1").enterQuantityForZebra("1")
+		  .selectState("AL");
+		  Number expectedPrice = common.calculatePrice(objProduct.getPriceForElephant(), 1) + 
+				  common.calculatePrice(objProduct.getPriceForGiraffe(), 1) +
+				  common.calculatePrice(objProduct.getPriceForLion(), 1) +
+				  common.calculatePrice(objProduct.getPriceForZibra(), 1) ;
+		  Double expectedTaxes = common.calculateSalesTax(expectedPrice, 0.05);
+		  Double expectedTotal = expectedPrice.doubleValue() + expectedTaxes ;
+		  //System.out.println("ePrice="+expectedPrice.doubleValue()+" eTaxes="+expectedTaxes+" eTotal="+expectedTotal);
+		  objChkout = objProduct.clickCheckout();
+		  //System.out.println("aPrice="+objChkout.getSubtotal().doubleValue()+" aTaxes"+objChkout.gettaxes()+" aTotal="+objChkout.getTotal());	
+		  assertEquals(expectedPrice ,objChkout.getSubtotal().doubleValue() );
+		  assertEquals(expectedTaxes ,objChkout.gettaxes());	
+		  assertEquals(expectedTotal , objChkout.getTotal());  
 	 }
 	
-	@Test
+	//@Test
 	  void testInvalidInput(){
 		//TODO -- no error displayed on website for negative input or incorrect value
 	}
